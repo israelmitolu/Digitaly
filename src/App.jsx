@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Logo from "./assets/images/Digitaly Logo.png";
 
 const App = () => {
-  return (
-    <div className="App">
-      <h1>DIGITALY</h1>
-    </div>
-  );
-}
+	return (
+		<div>
+			<img src={Logo} alt='Logo' />
+		</div>
+	);
+};
 
 export default App;
