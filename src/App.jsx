@@ -1,11 +1,12 @@
 import React from "react";
-import Logo from "./assets/images/Logo.png";
-// import Logo from "./assets/images/Logo.png";
+import Deliver from "./sections/Deliver/Deliver";
+import Home from "./sections/Home/Home";
 
 const App = () => {
 	return (
-		<div className="bg-gray-300 h-screen flex items-center justify-center">
-			<img src={Logo} alt='Logo' />
+		<div className="bg-[#1e1e20]">
+			<Home />
+			<Deliver />
 		</div>
 	);
 };

@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* Customizing Base Font. Check tailwind.config file for more fonts */
 @layer base {
 	*{
