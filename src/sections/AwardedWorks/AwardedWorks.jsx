@@ -1,6 +1,7 @@
 import TrumpTag from "../../assets/images/Trump Tag.png";
 import AwardedWork from "../../components/Work/AwardedWork";
-import { IoLogoSkype, IoLogoCodepen } from "react-icons/io5";
+import ClassicBlueTag from "../../assets/images/Classic Blue Tag.png";
+// import OrangyWaveTag from "../../assets/images/Orangy Wave Tag.png";
 
 const AwardedWorks = () => {
   return (
@@ -22,15 +23,15 @@ const AwardedWorks = () => {
         labels={["SEO", "Social Ads", "2021 Awards"]}
         caption="Classic blue"
         title="Classic Blue"
-        icon={<IoLogoSkype />}
-        bgImage="work-banner-1"
+        icon={ClassicBlueTag}
+        className="bg-work-banner-1"
       />
       <AwardedWork
         labels={["CRO", "Content Marketing", "2021 Awards"]}
         caption="Orangy Wave"
         title="Orangy Wave"
-        icon={<IoLogoCodepen />}
-        bgImage="work-banner-2"
+        icon={ClassicBlueTag}
+        className="bg-work-banner-2"
       />
     </div>
   );
