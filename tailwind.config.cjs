@@ -18,9 +18,9 @@ module.exports = {
         raleway: ["Raleway", "sans-serif"],
       },
       backgroundImage: {
-        "t-banner": "url('assets/images/Home Trump Banner.png')",
-        "work-banner-1": "url('assets/images/Black waves.jpg')",
-        "work-banner-2": "url('assets/images/Mercury ball.jpg')",
+        't-banner': "url('assets/images/Home Trump Banner.png')",
+        'work-banner-1': "url('assets/images/Classic Blue Bg.png')",
+        'work-banner-2': "url('assets/images/Orangy Wave Bg.png')",
       },
     },
   },
