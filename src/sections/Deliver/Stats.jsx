@@ -4,7 +4,7 @@ import { BiPlusMedical } from "react-icons/bi";
 const Stats = () => {
 	return (
 		<>
-			<div className='flex flex-wrap justify-center lg:flex-nowrap gap-8 lg:justify-between items-center mt-[3rem] pb-[2rem] border-b border-gray-600 text-[#dadada]'>
+			<div className='flex flex-wrap justify-center lg:flex-nowrap gap-8 md:justify-between items-center mt-[3rem] pb-[2rem] border-b border-gray-600 text-[#dadada]'>
 				<div>
 					<div className='flex items-start'>
 						<p className='font-lato text-[3rem] lg:text-[5rem] font-bold'>
