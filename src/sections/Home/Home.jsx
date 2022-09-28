@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <div className="">
       <Navbar />
-      <div className="h-[85vh] sl:h-[60vh] bg-[#f1f1f1] rounded-bl-[4rem] rounded-br-[4rem] relative">
-        <div className="max-w-[1200px] m-auto">
+      <div className="bg-[#f1f1f1] rounded-bl-[4rem] rounded-br-[4rem] relative">
+        <div className="h-[85vh] sl:h-[60vh] max-w-[1200px] m-auto relative">
           <div className="py-[2rem] flex flex-col items-center lg:flex-row lg:gap-8 lg:px-[2rem] px-[1rem]">
             <div className="lg:w-[60%] text-center lg:text-left mb-8 lg:mb-0">
               <div className="md:flex items-center">
