@@ -1,8 +1,10 @@
 import React from "react";
 import AwardedWorks from "./sections/AwardedWorks/AwardedWorks";
+import Clients from "./sections/Clients/Clients";
 import Deliver from "./sections/Deliver/Deliver";
 import Home from "./sections/Home/Home";
 import SelectedWorks from "./sections/SelectedWorks/SelectedWorks";
+import Team from "./sections/Team/Team";
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <Deliver />
       <SelectedWorks />
       <AwardedWorks />
+      <Team />
+      <Clients />
     </div>
   );
 };
