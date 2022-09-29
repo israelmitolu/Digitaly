@@ -34,7 +34,7 @@ const Home = () => {
                 express themselves and establish meaningful relationships.
               </p>
               <div className="flex flex-col items-center md:flex-row md:justify-center lg:justify-start">
-                <Button className="flex items-center w-fit mb-4 md:mb-0">
+                <Button className="flex items-center w-fit mb-4 md:mb-0 font-medium">
                   <span className="mr-4">Start Project</span> <FiArrowUpRight />
                 </Button>
                 <div className="md:ml-8 flex">
