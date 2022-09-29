@@ -6,20 +6,20 @@ import TeamMember2 from "../../assets/images/Team Member 2.png";
 const Team = () => {
   return (
     <div className="flex justify-around align-top text-[#e5e5e5] pb-[2rem] w-[90%] max-w-[1200px] mt-8 m-auto px-10 xxl:pt-[3rem]">
-      <div className="text-center  w-[30%]">
+      <div className=" flex flex-col justify-around items-center   w-[30%]">
         <img
           src={TeamMember1}
           alt="John Travolta, CEO Digitaly"
-          className="max-w-[20rem] h-auto mb-6"
+          className="max-w-[18rem] h-auto mb-6"
         />
         <p className="text-white text-2xl">John Travolta</p>
         <span className="text-[#929294]">CEO Digitaly</span>
       </div>
-      <div className="text-center  w-[30%]">
+      <div className=" flex flex-col justify-around items-center  w-[30%]">
         <img
           src={TeamMember2}
           alt="Frank Staven, Art Director Digitaly"
-          className="max-w-[20rem] h-auto mb-6"
+          className="max-w-[18rem] h-auto mb-6"
         />
         <p className="text-white text-2xl">Frank Staven</p>
         <span className="text-[#929294]">Art Director Digitaly</span>
