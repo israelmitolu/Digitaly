@@ -5,6 +5,7 @@ import Deliver from "./sections/Deliver/Deliver";
 import Home from "./sections/Home/Home";
 import SelectedWorks from "./sections/SelectedWorks/SelectedWorks";
 import Team from "./sections/Team/Team";
+import CTA from "./sections/CTA/CTA";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <AwardedWorks />
       <Team />
       <Clients />
+      <CTA />
     </div>
   );
 };
