@@ -18,7 +18,6 @@ const Clients = () => {
 
       {/* Client logos */}
       <div className="flex flex-wrap justify-center gap-4 md:gap-0 lg:flex-nowrap items-center md:justify-between py-[1rem] border-b border-t border-gray-600 mt-14">
-        {/* <p className="text-[1.2rem] lg:text-[3rem] uppercase">SEO</p> */}
         <FaApple className="text-[6rem] my-6" />
         <div className="bg-[#353535] hidden md:block h-[.5rem] w-[.5rem] lg:h-[1rem] lg:w-[1rem] rounded-[50%]"></div>
         <FaAmazon className="text-[6rem]" />
