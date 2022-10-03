@@ -6,7 +6,7 @@ const SelectedWorks = () => {
     <section className="flex flex-col-reverse lg:flex-row text-[#e5e5e5] pb-[2rem] w-[90%] max-w-[1200px] mt-16 m-auto px-10 xxl:pt-[3rem]">
       <div className="left lg:w-[70%] items-center lg:mr-12 mt-10 lg:mt-0">
         <img src={WorksBanner} alt="" />
-        <div className="flex justify-between items-center mt-10">
+        <div className="flex flex-col lg:flex-row justify-between items-center mt-10">
           <SelectedWork
             title={
               <h3 className="text-[3rem] lg:text-[3.25rem] font-semibold uppercase w-[70%] break-all leading-[3rem]">
@@ -15,7 +15,7 @@ const SelectedWorks = () => {
               </h3>
             }
             year="2022"
-            className="bg-red-600 w-[48%]"
+            className="bg-red-600 mb-10 lg:mb-0 lg:w-[48%]"
           />
           <SelectedWork
             title={
@@ -25,25 +25,25 @@ const SelectedWorks = () => {
               </h3>
             }
             year="2022"
-            className="bg-yellow-500 w-[48%]"
+            className="bg-yellow-500 lg:w-[48%]"
           />
         </div>
       </div>
 
       <div className="right lg:w-[30%] flex flex-col items-center">
         <div>
-          <h2 className="uppercase text-[1.5rem] lg:text-[3rem] font-semibold w-full lg:w-[30%] leading-[3rem] mb-4">
+          <h2 className="uppercase text-[1.5rem] lg:text-[3rem] font-semibold w-full leading-[3rem] mb-4">
             Selected Works
           </h2>
-          <p className="text-[#929294] font-medium">
+          <p className="text-[#929294] font-medium text-[80%] lg:text-base">
             Let's get a deeper look at the challenges we overcome daily to
             create success stories for brands.
           </p>
         </div>
         <SelectedWork
-          rotate
+          rotate={window.innerWidth < 768 ? false : true}
           title={
-            <h3 className="text-[3.5rem] lg:text-[5rem] font-semibold uppercase w-full">
+            <h3 className="text-[3rem] lg:text-[5rem] font-semibold uppercase w-full">
               Positive
             </h3>
           }
