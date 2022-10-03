@@ -5,11 +5,11 @@ import Tag2 from "../../assets/images/Deliver Trump Circle.png";
 
 const Deliver = () => {
   return (
-    <div className="h-full text-white pt-[5rem] pb-[2rem] w-[90%] max-w-[1200px] m-auto px-10 md:pt-[15rem] xxl:pt-[20rem]">
+    <div className="h-full text-white pt-[5rem] pb-[2rem] lg:w-[90%] max-w-[1200px] m-auto px-6 md:px-10 md:pt-[15rem] xxl:pt-[20rem]">
       <Stats />
       <div>
         <div className="flex justify-between items-center mb-8 mt-[4rem]">
-          <p className="uppercase text-[1.5rem] lg:text-[3rem] w-full lg:w-[30%] leading-[3rem]">
+          <p className="uppercase text-[1.5rem] font-semibold lg:text-[3rem] w-full lg:w-[30%] leading-[3rem]">
             What we deliver
           </p>
           <img className="h-[80px] hidden lg:block" src={Tag1} alt="Tag 1" />

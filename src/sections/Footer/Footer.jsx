@@ -4,7 +4,7 @@ import FooterLink from "../../components/FooterLink/FooterLink";
 const Footer = () => {
   return (
     <>
-      <footer className="pb-[4rem] w-[90%] max-w-[1200px] m-auto px-10">
+      <footer className="pb-[4rem] lg:w-[90%] max-w-[1200px] m-auto px-6 lg:px-10">
         <div className="flex flex-col md:flex-row justify-between mt-[4rem]">
           {/* Left  */}
           <div className="md:w-[40%]">

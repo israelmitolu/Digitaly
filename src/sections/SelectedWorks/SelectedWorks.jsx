@@ -3,13 +3,13 @@ import WorksBanner from "../../assets/images/Selected Works Card Bg.png";
 
 const SelectedWorks = () => {
   return (
-    <section className="flex flex-col-reverse lg:flex-row text-[#e5e5e5] pb-[2rem] w-[90%] max-w-[1200px] mt-16 m-auto px-10 xxl:pt-[3rem]">
+    <section className="flex flex-col-reverse lg:flex-row text-[#e5e5e5] pb-[2rem] lg:w-[90%] max-w-[1200px] mt-16 m-auto px-6 md:px-10 xxl:pt-[3rem]">
       <div className="left lg:w-[70%] items-center lg:mr-12 mt-10 lg:mt-0">
-        <img src={WorksBanner} alt="" />
-        <div className="flex flex-col lg:flex-row justify-between items-center mt-10">
+        <img src={WorksBanner} alt="" className="hidden lg:flex" />
+        <div className="flex flex-col lg:flex-row justify-between items-center lg:mt-10">
           <SelectedWork
             title={
-              <h3 className="text-[3rem] lg:text-[3.25rem] font-semibold uppercase w-[70%] break-all leading-[3rem]">
+              <h3 className="text-[2rem] lg:text-[3.25rem] font-semibold uppercase w-[70%] break-all leading-[3rem]">
                 <span className="block">Beef</span>
                 <span>ness</span>
               </h3>
@@ -19,7 +19,7 @@ const SelectedWorks = () => {
           />
           <SelectedWork
             title={
-              <h3 className="text-[3rem] lg:text-[3.25rem] font-semibold uppercase w-[70%] break-all leading-[3rem]">
+              <h3 className="text-[2rem] lg:text-[3.25rem] font-semibold uppercase w-[70%] break-all leading-[3rem]">
                 <span className="block">Boo</span>
                 <span>kly</span>
               </h3>
@@ -30,7 +30,7 @@ const SelectedWorks = () => {
         </div>
       </div>
 
-      <div className="right lg:w-[30%] flex flex-col items-center">
+      <div className="right lg:w-[30%] flex flex-col lg:items-center">
         <div>
           <h2 className="uppercase text-[1.5rem] lg:text-[3rem] font-semibold w-full leading-[3rem] mb-4">
             Selected Works
@@ -41,14 +41,14 @@ const SelectedWorks = () => {
           </p>
         </div>
         <SelectedWork
-          rotate={window.innerWidth < 768 ? false : true}
+          rotate={true}
           title={
-            <h3 className="text-[3rem] lg:text-[5rem] font-semibold uppercase w-full">
+            <h3 className="text-[2rem] lg:text-[5rem] font-semibold uppercase w-full">
               Positive
             </h3>
           }
           year="2021"
-          className=" bg-[#ea8113] w-[300px] h-full mt-8"
+          className=" bg-[#ea8113] lg:w-[300px] h-full mt-8"
         />
       </div>
     </section>

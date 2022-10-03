@@ -10,12 +10,12 @@ const Home = () => {
   return (
     <div className="">
       <Navbar />
-      <div className="bg-[#f1f1f1] rounded-bl-[4rem] rounded-br-[4rem] relative">
+      <div className="bg-[#f1f1f1] rounded-bl-[2rem] lg:rounded-bl-[4rem] rounded-br-[2rem] lg:rounded-br-[4rem] relative">
         <div className="h-[85vh] sl:h-[60vh] max-w-[1200px] m-auto relative">
           <div className="py-[2rem] flex flex-col items-center lg:flex-row lg:gap-8 lg:px-[2rem] px-[1rem]">
             <div className="lg:w-[60%] text-center lg:text-left mb-8 lg:mb-0">
               <div className="md:flex items-center">
-                <h1 className="uppercase text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold ">
+                <h1 className="uppercase text-[3rem] md:text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold ">
                   Sharing
                 </h1>
                 <img
@@ -24,7 +24,7 @@ const Home = () => {
                   alt="Trump Tag"
                 />
               </div>
-              <h1 className="uppercase text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold ">
+              <h1 className="uppercase text-[3rem] md:text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold ">
                 Your Vision
               </h1>
             </div>

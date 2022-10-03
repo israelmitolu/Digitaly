@@ -4,7 +4,7 @@ const SelectedWork = ({ title, year, className, rotate }) => {
       {/* <div className={`${rotate && "-rotate-90 flex flex-col justify-center items-center w-full h-full"}`}> */}
       <div
         className={`${
-          rotate && "-rotate-90 grid grid-rows-2 justify-end w-full h-fit"
+          rotate && "rotate-0 lg:-rotate-90 lg:grid lg:grid-rows-2 justify-end w-full h-fit"
         }`}
       >
         {title}
