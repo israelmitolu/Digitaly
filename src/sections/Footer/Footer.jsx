@@ -5,16 +5,16 @@ const Footer = () => {
   return (
     <>
       <footer className="pb-[4rem] w-[90%] max-w-[1200px] m-auto px-10">
-        <div className="flex justify-between mt-[4rem]">
+        <div className="flex flex-col md:flex-row justify-between mt-[4rem]">
           {/* Left  */}
-          <div className="w-[40%]">
-            <h2 className="uppercase text-[1.5rem] lg:text-[3rem] font-semibold w-[30%] leading-[3rem] text-[#e5e5e5]">
+          <div className="md:w-[40%]">
+            <h2 className="uppercase text-[1.5rem] lg:text-[3rem] font-semibold lg:w-[70%] leading-[3rem] text-[#e5e5e5]">
               Keep in Touch
             </h2>
             <a href="">
               <img src={Logo} alt="Logo" className="h-[25px] my-4" />
             </a>
-            <p className="text-[#929294] font-medium mb-8">
+            <p className="text-[#929294] font-medium mb-8 lg:text-base text-[80%]">
               Palau Sebira, Kepulauan Seribu Utara, Kab. Administrasi Kepulauan
               Seribu, Daerah Khusus Ibukota Jakarta
             </p>
@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
 
           {/* Right  */}
-          <div className="w-[40%] flex flex-col justify-between">
+          <div className="md:w-[40%] flex flex-col justify-between">
             <FooterLink text="Email" handle="Hello@Digitaly.yeah" />
             <FooterLink text="Instagram" handle="@Digitaly" />
             <FooterLink text="Twitter" handle="@Digitaly" />
