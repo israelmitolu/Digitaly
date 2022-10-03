@@ -7,7 +7,7 @@ const FooterLink = ({ text, handle, className }) => {
     >
       <span className="uppercase">{text}</span>
       <div className="flex items-center ">
-        <p className="mr-2">{handle}</p>
+        <p className="mr-2 font-normal lg:text-base text-[80%]">{handle}</p>
         <FiArrowUpRight size={20} />
       </div>
     </div>
