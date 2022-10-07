@@ -6,8 +6,8 @@ import TeamMember2 from "../../assets/images/Team Member 2.png";
 const Team = () => {
 	return (
 		<div className='flex flex-col-reverse lg:flex-row lg:justify-between align-top text-[#e5e5e5] pb-[2rem] lg:w-[90%] max-w-[1200px] mt-8 m-auto px-6 md:px-10 xxl:pt-[3rem]'>
-			<div className="flex justify-between w-full md:w-[70%] lg:w-[46%]">
-				<div className=' flex flex-col items-center'>
+			<div className="flex md:justify-between w-full md:w-[50%] lg:w-[46%]">
+				<div className=' flex flex-col items-center mr-8 md:mr-0'>
 					<img
 						src={TeamMember1}
 						alt='John Travolta, CEO Digitaly'
