@@ -70,9 +70,6 @@ const Navbar = () => {
 							? { left: "0"}
 							: { left: "100%", transition: { delay: 1 } }
 					}
-					// ${
-					// 	nav ? "opacity-1 left-0" : "opacity-0 left-[100%]"
-					// }
 					className={`bg-black bg-center bg-[length:900%] h-screen z-50 fixed top-0 w-screen duration-300 `}>
 					<motion.div
 						initial='hidden'

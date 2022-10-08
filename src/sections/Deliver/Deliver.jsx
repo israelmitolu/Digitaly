@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import { AnimationContext } from "../../context/animation";
 
 const Deliver = () => {
-	const { riseUpVariant, riseUpItem, tagVariant } = useContext(AnimationContext);
+	const { riseUpVariant, riseUpItem, tagVariant } =
+		useContext(AnimationContext);
 	return (
 		<div
 			id='about'
@@ -36,20 +37,30 @@ const Deliver = () => {
 						alt='Tag 2'
 					/>
 				</motion.div>
-				<div className='flex flex-wrap md:flex-nowrap gap-8'>
-					<p className='text-[#929294] font-medium lg:text-base text-[80%]'>
+				<motion.div
+					variants={riseUpVariant}
+					initial='hidden'
+					whileInView='visible'
+					className='flex flex-wrap md:flex-nowrap gap-8'>
+					<motion.p
+						variants={riseUpItem}
+						className='text-[#929294] font-medium lg:text-base text-[80%]'>
 						Custom digital strategy informed by a powerful appraisal & your
 						business deserves more than a pre-packed strategy
-					</p>
-					<p className='text-[#929294] font-medium lg:text-base text-[80%]'>
+					</motion.p>
+					<motion.p
+						variants={riseUpItem}
+						className='text-[#929294] font-medium lg:text-base text-[80%]'>
 						See the progress we are making & what's driving results, anytime, we
 						keep you consistently, transparently informed.
-					</p>
-					<p className='text-[#929294] font-medium lg:text-base text-[80%]'>
+					</motion.p>
+					<motion.p
+						variants={riseUpItem}
+						className='text-[#929294] font-medium lg:text-base text-[80%]'>
 						Services that dovetail together for your greatest ROI, rowing in the
 						same direction towards your growth goals.
-					</p>
-				</div>
+					</motion.p>
+				</motion.div>
 			</div>
 		</div>
 	);
