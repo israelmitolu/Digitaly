@@ -3,43 +3,55 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Logo from "../../assets/images/Logo.png";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import { useContext } from "react";
+import { AnimationContext } from "../../context/animation";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const handleNav = () => {
 		setNav(!nav);
 	};
+
+	const { riseUpVariant, riseUpItem } = useContext(AnimationContext);
+
 	return (
 		<>
 			<div className='bg-[#f1f1f1] relative z-10'>
-				<div className='flex flex-row justify-between items-center py-4 px-4 lg:px-8 pb-4 lg:pb-8 border-b border-[#dddddd] max-w-[1200px] m-auto'>
+				<motion.div
+					variants={riseUpVariant}
+					initial='hidden'
+					whileInView='visible'
+					className='flex flex-row justify-between items-center py-4 px-4 lg:px-8 pb-4 lg:pb-8 border-b border-[#dddddd] max-w-[1200px] m-auto'>
 					<Link
 						to='about'
 						className='cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'>
-						About Us
+						<motion.span variants={riseUpItem}>About Us</motion.span>
 					</Link>
 					<Link
 						to='project'
 						className='cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'>
-						Project
+						<motion.span variants={riseUpItem}>Project</motion.span>
 					</Link>
-					<Link to='home' className="cursor-pointer">
-						<img src={Logo} alt='Logo' className='h-[25px]' />
+					<Link to='home' className='cursor-pointer'>
+						<motion.img variants={riseUpItem} src={Logo} alt='Logo' className='h-[25px]' />
 					</Link>
-					<Link to='services'
+					<Link
+						to='services'
 						className='cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'
 						href=''>
-						Services
+						<motion.span variants={riseUpItem}>Services</motion.span>
 					</Link>
-					<Link to='contact'
+					<Link
+						to='contact'
 						className='cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'
 						href=''>
-						Contact Us
+						<motion.span variants={riseUpItem}> Contact Us</motion.span>{" "}
 					</Link>
 					<div className='md:hidden' onClick={handleNav}>
 						<HiOutlineMenuAlt3 size={25} />
 					</div>
-				</div>
+				</motion.div>
 			</div>
 			<div
 				className={`bg-black bg-center bg-[length:900%] h-screen z-50 fixed top-0 w-screen duration-300 ${
