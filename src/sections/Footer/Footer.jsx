@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import Logo from "../../assets/images/Logo White.png";
 import FooterLink from "../../components/FooterLink/FooterLink";
 
@@ -11,9 +12,9 @@ const Footer = () => {
             <h2 className="uppercase text-[1.5rem] lg:text-[3rem] font-semibold lg:w-[70%] leading-[3rem] text-[#e5e5e5]">
               Keep in Touch
             </h2>
-            <a href="">
+            <Link to="home" className="cursor-pointer">
               <img src={Logo} alt="Logo" className="h-[25px] my-4" />
-            </a>
+            </Link>
             <p className="text-[#929294] font-medium mb-8 lg:text-base text-[80%]">
               Palau Sebira, Kepulauan Seribu Utara, Kab. Administrasi Kepulauan
               Seribu, Daerah Khusus Ibukota Jakarta

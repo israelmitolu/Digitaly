@@ -8,7 +8,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Home = () => {
   return (
-    <div className="">
+    <div id="home">
       <Navbar />
       <div className="bg-[#f1f1f1] rounded-bl-[2rem] lg:rounded-bl-[4rem] rounded-br-[2rem] lg:rounded-br-[4rem] relative">
         <div className="h-[85vh] sl:h-[60vh] max-w-[1200px] m-auto relative">

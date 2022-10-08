@@ -6,7 +6,7 @@ import OrangyWaveTag from "../../assets/images/Orangy Wave Tag.png";
 
 const AwardedWorks = () => {
 	return (
-		<div className='text-[#e5e5e5] pb-[2rem] lg:w-[90%] max-w-[1200px] m-auto px-6 md:px-10 xxl:pt-[3rem]'>
+		<div id="services" className='text-[#e5e5e5] pb-[2rem] lg:w-[90%] max-w-[1200px] m-auto px-6 md:px-10 xxl:pt-[3rem]'>
 			<div className='flex flex-col lg:flex-row justify-between lg:items-center gap-2 lg:gap-10 mt-[4rem]'>
 				<h2 className='uppercase text-[1.5rem] lg:text-[3rem] font-semibold lg:w-[30%] leading-[3rem]'>
 					Awarded Works

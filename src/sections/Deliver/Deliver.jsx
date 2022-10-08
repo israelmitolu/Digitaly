@@ -5,7 +5,7 @@ import Tag2 from "../../assets/images/Deliver Trump Circle.png";
 
 const Deliver = () => {
   return (
-    <div className="h-full text-white pt-[5rem] pb-[2rem] lg:w-[90%] max-w-[1200px] m-auto px-6 md:px-10 md:pt-[15rem] xxl:pt-[20rem]">
+    <div id="about" className="h-full text-white pt-[5rem] pb-[2rem] lg:w-[90%] max-w-[1200px] m-auto px-6 md:px-10 md:pt-[15rem] xxl:pt-[20rem]">
       <Stats />
       <div>
         <div className="flex justify-between items-center mb-8 mt-[4rem]">

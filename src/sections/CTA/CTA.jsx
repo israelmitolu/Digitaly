@@ -5,7 +5,7 @@ import CtaBanner from "../../assets/images/Start Project Bg.png";
 const CTA = () => {
 	return (
 		<>
-			<section className='text-[#fff] pb-[2rem] lg:w-[90%] max-w-[1200px] m-auto px-6 md:px-10 mt-[3rem]'>
+			<section id='contact' className='text-[#fff] pb-[2rem] lg:w-[90%] max-w-[1200px] m-auto px-6 md:px-10 mt-[3rem]'>
 				<div className='relative'>
 					<img
 						src={CtaBanner}

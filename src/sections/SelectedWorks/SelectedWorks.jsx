@@ -3,7 +3,7 @@ import WorksBanner from "../../assets/images/Selected Works Card Bg.png";
 
 const SelectedWorks = () => {
   return (
-    <section className="flex flex-col-reverse lg:flex-row text-[#e5e5e5] pb-[2rem] lg:w-[90%] max-w-[1200px] mt-16 m-auto px-6 md:px-10 xxl:pt-[3rem]">
+    <section id="project" className="flex flex-col-reverse lg:flex-row text-[#e5e5e5] pb-[2rem] lg:w-[90%] max-w-[1200px] mt-16 m-auto px-6 md:px-10 xxl:pt-[3rem]">
       <div className="left lg:w-[70%] items-center lg:mr-12 mt-10 lg:mt-0">
         <img src={WorksBanner} alt="" className="hidden lg:flex" />
         <div className="flex flex-col lg:flex-row justify-between items-center lg:mt-10">
