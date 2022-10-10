@@ -18,6 +18,21 @@ export const AnimationContextWrapper = ({ children }) => {
 			},
 		},
 	};
+	const riseUpVariant2 = {
+		hidden: {
+			opacity: 0,
+			y: 20,
+		},
+		visible: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1,
+				delayChildren: 0.8,
+				staggerChildren: 0.2,
+			},
+		},
+	};
 
 	const riseUpItem = {
 		hidden: { opacity: 0, y: 20 },
@@ -74,6 +89,7 @@ export const AnimationContextWrapper = ({ children }) => {
 
 	const values = {
 		riseUpVariant,
+		riseUpVariant2,
 		riseUpItem,
 		fade,
 		navVariants,
