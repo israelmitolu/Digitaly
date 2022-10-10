@@ -4,7 +4,6 @@ import Label from "../Label/Label";
 import { motion } from "framer-motion";
 
 const AwardedWork = ({ labels, caption, title, icon, className }) => {
-	const { fade } = useContext(AnimationContext);
 	return (
 		<div className='mt-5 lg:mt-10'>
 			{/* The head */}

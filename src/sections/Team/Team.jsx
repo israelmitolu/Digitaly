@@ -7,7 +7,8 @@ import { AnimationContext } from "../../context/animation";
 import { motion } from "framer-motion";
 
 const Team = () => {
-	const { riseUpVariant, tagVariant } = useContext(AnimationContext);
+	const { riseUpVariant2, riseUpVariant, tagVariant, riseUpItem } =
+		useContext(AnimationContext);
 	return (
 		<div className='flex flex-col-reverse lg:flex-row lg:justify-between align-top text-[#e5e5e5] pb-[2rem] lg:w-[90%] max-w-[1200px] mt-8 m-auto px-6 md:px-10 xxl:pt-[3rem]'>
 			<div className='flex md:justify-between w-full md:w-[50%] lg:w-[46%]'>
@@ -64,33 +65,23 @@ const Team = () => {
 			</div>
 
 			<motion.div
-				variants={riseUpVariant}
+				variants={riseUpVariant2}
+				initial='hidden'
+				whileInView='visible'
 				className='flex flex-col lg:items-start lg:text-left w-full mb-8 lg:mb-0 lg:w-[46%]'>
 				<motion.h2
-					initial={{ opacity: 0, y: 20 }}
-					whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+					variants={riseUpItem}
 					className='uppercase text-[1.5rem] lg:text-[3rem] font-semibold  leading-[3rem] text-[#e5e5e5] mb-4'>
 					Meet Our Teams
 				</motion.h2>
 				<motion.p
-					initial={{ opacity: 0, y: 20 }}
-					whileInView={{
-						opacity: 1,
-						y: 0,
-						transition: { duration: 0.8, delay: 0.3 },
-					}}
+					variants={riseUpItem}
 					className='text-[#929294] font-medium lg:text-base text-[80%]'>
 					Our team consists of more than 80 experienced and very passionate
 					people at the cutting edge of all things digital marketing. We always
 					give our best for you.
 				</motion.p>
-				<motion.div
-					initial={{ opacity: 0, y: 20 }}
-					whileInView={{
-						opacity: 1,
-						y: 0,
-						transition: { duration: 0.8, delay: 0.6 },
-					}}>
+				<motion.div variants={riseUpItem}>
 					<Button className='flex items-center w-fit mt-8 md:mb-0 text-black bg-[#e5e5e5] font-medium'>
 						<span className='mr-4 '>All Digitaly Team</span> <FiArrowUpRight />
 					</Button>
