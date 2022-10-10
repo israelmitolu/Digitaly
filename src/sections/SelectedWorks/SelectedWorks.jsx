@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AnimationContext } from "../../context/animation";
 
 const SelectedWorks = () => {
-	const { riseUpVariant, riseUpItem, fade } = useContext(AnimationContext);
+	const { fade } = useContext(AnimationContext);
 	return (
 		<section
 			id='project'
