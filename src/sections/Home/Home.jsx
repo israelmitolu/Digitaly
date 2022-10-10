@@ -97,7 +97,7 @@ const Home = () => {
 						<motion.img
 							initial={{ opacity: 0, y: 100 }}
 							whileInView={fade}
-              viewport={{ once: true }}
+							viewport={{ once: true }}
 							src={HomeBanner}
 							className='w-[80%] m-auto'
 							alt='Home Banner'
