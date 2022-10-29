@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef, useEffect } from "react";
 import AwardedWorks from "./sections/AwardedWorks/AwardedWorks";
 import Clients from "./sections/Clients/Clients";
 import Deliver from "./sections/Deliver/Deliver";
@@ -7,19 +7,28 @@ import SelectedWorks from "./sections/SelectedWorks/SelectedWorks";
 import Team from "./sections/Team/Team";
 import CTA from "./sections/CTA/CTA";
 import Footer from "./sections/Footer/Footer";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 const App = () => {
+  const containerRef = useRef(null);
+
+  const options = {
+    smooth: true,
+  };
+
   return (
-    <div className="bg-[#1e1e20]">
-      <Home />
-      <Deliver />
-      <SelectedWorks />
-      <AwardedWorks />
-      <Team />
-      <Clients />
-      <CTA />
-      <Footer />
-    </div>
+    <LocomotiveScrollProvider options={options} containerRef={containerRef}>
+      <main className="bg-[#1e1e20]" data-scroll-container ref={containerRef}>
+        <Home />
+        <Deliver />
+        <SelectedWorks />
+        <AwardedWorks />
+        <Team />
+        <Clients />
+        <CTA />
+        <Footer />
+      </main>
+    </LocomotiveScrollProvider>
   );
 };
 
