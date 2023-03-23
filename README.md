@@ -34,7 +34,7 @@ git clone https://github.com/israelmitolu/Digitaly.git
 cd Digitaly
 ```
 
-### Install NPM
+### Install dependencies
 
 ```bash
 npm install
